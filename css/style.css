@@ -1,72 +1,76 @@
-* {    
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #ffffff;
-    font-family: HelveticaNow,Helvetica,sans-serif;
-}
 
-main {
-    width: 80%;
-    margin: auto;
-    margin-top: 5px;
-    padding: 10px;
-    font-size: 24px;
-    margin-bottom: 40px;
-}
-
-#row {
-    font-size: 0px;
-}
-.box {
-    display: inline-block;
-    margin: 5px;
-    padding-bottom: 70px;
-   
-}
-
-span {
-    background-color: white;
-    color: black;
-}
-
-.box-overlay {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    position: relative;
-}
- 
-.box:hover .box-overlay {
-    opacity: 1;
-}
-
-.box-overlay::after {
-    content: "-50%";
-    background-color: red;
-    width: 27px;
-    height: 20px;
-    position: absolute;
-    left: 0px;
-    bottom: 20px;
-    font-size: 9px;
-    text-align: center;
-    line-height: 20px;
-    font-weight: bolder;
-}
-
-.box-overlay::before {
-    content: "Sostenibilta";
-    background-color: green;
-    width: 65px;
-    height: 20px;
-    position: absolute;
-    left: 30px;
-    bottom: 20px;
-    font-size: 9px;
-    text-align: center;
-    line-height: 20px;
-    font-weight: bolder;
-}
-
-
+    * {    
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: #ffffff;
+        font-family: HelveticaNow,Helvetica,sans-serif;
+    }
+    
+    main {
+        width: 70%x;
+        width: 80%;
+        margin: auto;
+        margin-top: 0px;
+        padding: 40px;
+        padding-left: 50%x;
+        margin-top: 5px;
+        padding: 10px;
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    #row {
+        font-size: 0px;
+    }
+    .box {
+        display: inline-block;
+        margin: 5px;
+        padding-bottom: 70px;
+    
+    }
+    
+    span {
+        background-color: white;
+        color: black;
+    }
+    
+    .box-overlay {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        position: relative;
+    }
+    
+    .box:hover .box-overlay {
+        opacity: 1;
+    }
+    
+    .box-overlay::after {
+        content: "-50%";
+        background-color: red;
+        width: 27px;
+        height: 20px;
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+        font-size: 9px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bolder;
+    }
+    
+    .box-overlay::before {
+        content: "Sostenibilta";
+        background-color: green;
+        width: 65px;
+        height: 20px;
+        position: absolute;
+        left: 30px;
+        bottom: 20px;
+        font-size: 9px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bolder;
+    }
+    
