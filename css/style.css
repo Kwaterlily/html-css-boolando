@@ -8,8 +8,7 @@
     }
     
     main {
-        width: 70%x;
-        width: 80%;
+        width: 70%;
         margin: auto;
         margin-top: 0px;
         padding: 40px;
@@ -22,33 +21,102 @@
     
     #row {
         font-size: 0px;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
     }
+    
     .box {
-        display: inline-block;
-        margin: 5px;
-        padding-bottom: 70px;
-    
-    }
-    
-    span {
-        background-color: white;
-        color: black;
-    }
-    
-    .box-overlay {
-        width: 100%;
-        height: 100%;
-        opacity: 0;
+        width: 33%;
         position: relative;
+        margin-bottom: 80px;
+        margin-right: 0px;
     }
     
-    .box:hover .box-overlay {
-        opacity: 1;
+    .hearts {
+        color: black;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 16px;
+        top: 15px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        font-weight: bolder;
+    }
+
+    .marca {
+        color: black;
+        display: block;
+        width: 200px;
+        height: 40px;
+        position: absolute;
+        left: 0px;
+        bottom: -35px;
+        font-size: 11px;
+        line-height: 40px;
+        font-weight: 300;
+    }
+
+    .desctrizione {
+        color: black;
+        display: block;
+        width: 200px;
+        height: 40px;
+        position: absolute;
+        left: 0px;
+        bottom: -50px;
+        font-size: 12px;
+        line-height: 40px;
+        font-weight: 700;
     }
     
-    .box-overlay::after {
-        content: "-50%";
+    .foto2 {
+        display: none;
+    }
+
+    .box:hover .foto2 { 
+        display: block; 
+    }
+    
+    .box:hover .foto1 { 
+        display: none; 
+    }
+    
+    .rosso {
+        color: red;
+        display: block;
+        font-weight: 700;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 0px;
+        bottom: -65px;
+        font-size: 11px;
+        line-height: 40px
+    }
+
+    .prezzo {
+        color: black;
+        display: block;
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 45px;
+        bottom: -65px;
+        font-size: 11px;
+        text-decoration: line-through;
+        line-height: 40px;
+        font-weight: 300;
+    }
+
+    .box:hover .discount {
+        display: block;
         background-color: red;
+        color: white;
         width: 27px;
         height: 20px;
         position: absolute;
@@ -60,17 +128,33 @@
         font-weight: bolder;
     }
     
-    .box-overlay::before {
-        content: "Sostenibilta";
+    .box:hover .sostenibilità {
+        display: block;
         background-color: green;
+        font-size: 9px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: 700;
+        color: white;
         width: 65px;
         height: 20px;
         position: absolute;
         left: 30px;
-        bottom: 20px;
+        bottom: 20px;   
+    }
+
+    .box:hover .left {
+        display: block;
+        background-color: green;
         font-size: 9px;
         text-align: center;
         line-height: 20px;
-        font-weight: bolder;
+        font-weight: 700;
+        color: white;
+        width: 65px;
+        height: 20px;
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
     }
     
